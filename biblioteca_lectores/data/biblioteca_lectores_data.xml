@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="lector_001" model="biblioteca.lector">
+        <field name="name">Carlos Mendoza</field>
+        <field name="cedula">1712345678</field>
+        <field name="telefono">0991234567</field>
+        <field name="email">carlos.mendoza@correo.com</field>
+        <field name="limite_prestamos">3</field>
+        <field name="sede_id" ref="biblioteca_base.sede_central"/>
+    </record>
+
+    <record id="lector_002" model="biblioteca.lector">
+        <field name="name">María Torres</field>
+        <field name="cedula">1723456789</field>
+        <field name="telefono">0987654321</field>
+        <field name="email">maria.torres@correo.com</field>
+        <field name="limite_prestamos">2</field>
+        <field name="sede_id" ref="biblioteca_base.sede_norte"/>
+    </record>
+
+    <record id="lector_003" model="biblioteca.lector">
+        <field name="name">Andrés Castillo</field>
+        <field name="cedula">0912345678</field>
+        <field name="telefono">0971112233</field>
+        <field name="email">andres.castillo@correo.com</field>
+        <field name="limite_prestamos">4</field>
+        <field name="sede_id" ref="biblioteca_base.sede_central"/>
+    </record>
+</odoo>

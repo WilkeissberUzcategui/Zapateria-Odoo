@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_biblioteca_lector_list" model="ir.ui.view">
+        <field name="name">biblioteca.lector.list</field>
+        <field name="model">biblioteca.lector</field>
+        <field name="arch" type="xml">
+            <list string="Lectores">
+                <field name="name"/>
+                <field name="cedula"/>
+                <field name="telefono"/>
+                <field name="email"/>
+                <field name="limite_prestamos"/>
+                <field name="sede_id"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_biblioteca_lector_form" model="ir.ui.view">
+        <field name="name">biblioteca.lector.form</field>
+        <field name="model">biblioteca.lector</field>
+        <field name="arch" type="xml">
+            <form string="Lector de Biblioteca">
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Nombre del lector"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Datos personales">
+                            <field name="cedula"/>
+                            <field name="telefono"/>
+                            <field name="email"/>
+                        </group>
+                        <group string="Información de biblioteca">
+                            <field name="limite_prestamos"/>
+                            <field name="sede_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_biblioteca_lector" model="ir.actions.act_window">
+        <field name="name">Lectores</field>
+        <field name="res_model">biblioteca.lector</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_biblioteca_lectores"
+              name="Lectores"
+              parent="biblioteca_base.menu_biblioteca_root"
+              action="action_biblioteca_lector"
+              sequence="40"/>
+</odoo>
