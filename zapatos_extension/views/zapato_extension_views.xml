@@ -30,6 +30,7 @@
 
                 <!-- CORREGIDO: antes estaba Stock_minimo, debe ser stock_minimo, en minúscula -->
                 <field name="stock_minimo"/>
+                <field name="descuento"/>
 
                 <!-- CORREGIDO: este campo queda como solo lectura porque es calculado -->
                 <field name="valor_inventario" readonly="1"/>
