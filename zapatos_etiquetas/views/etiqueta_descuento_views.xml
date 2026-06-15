@@ -70,17 +70,15 @@
     </record>
 
     <!-- ==================== MENUS ==================== -->
-    <menuitem id="menu_zapatos_etiquetas_root" name="Etiquetas y Descuentos" sequence="20"/>
-    
-    <menuitem id="menu_descuentos"
-              name="Descuentos"
-              parent="menu_zapatos_etiquetas_root"
-              action="action_descuentos"
-              sequence="10"/>
+   <menuitem id="menu_descuentos"
+          name="Descuentos"
+          parent="zapatos.menu_zapatos_root"
+          action="action_descuentos"
+          sequence="20"/>
 
     <menuitem id="menu_etiquetas"
-              name="Etiquetas"
-              parent="menu_zapatos_etiquetas_root"
-              action="action_etiquetas"
-              sequence="20"/>
+          name="Etiquetas"
+          parent="zapatos.menu_zapatos_root"
+          action="action_etiquetas"
+          sequence="30"/>
 </odoo>
