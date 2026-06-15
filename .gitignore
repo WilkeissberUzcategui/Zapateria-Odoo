@@ -10,3 +10,32 @@
 *.pyc
 *.pyo
 *.pyd
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+.env
+.env.*
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Cachés
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+EOF
