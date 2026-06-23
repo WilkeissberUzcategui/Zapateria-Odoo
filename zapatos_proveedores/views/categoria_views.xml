@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="view_categoria_list" model="ir.ui.view">
+        <field name="name">zapatos.categoria.list</field>
+        <field name="model">zapatos.categoria</field>
+        <field name="arch" type="xml">
+            <list string="Categorías">
+                <field name="name"/>
+                <field name="descripcion"/>
+            </list>
+        </field>
+    </record>
+
+
+    <record id="view_categoria_form" model="ir.ui.view">
+        <field name="name">zapatos.categoria.form</field>
+        <field name="model">zapatos.categoria</field>
+        <field name="arch" type="xml">
+            <form string="Categoría">
+
+                <sheet>
+
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1>
+                            <field name="name" placeholder="Nombre de la categoría"/>
+                        </h1>
+                    </div>
+
+                    <group>
+
+                        <group string="Información">
+                            <field name="descripcion" placeholder="Descripción de la categoría..."/>
+                        </group>
+
+                    </group>
+
+                    <separator string="Descripción"/>
+
+                    <group>
+                        <div class="text-muted">
+                            Las categorías permiten clasificar los zapatos para facilitar su organización y búsqueda
+                        </div>
+                    </group>
+                </sheet>
+
+            </form>
+        </field>
+    </record>
+
+    
+    <record id="action_categorias" model="ir.actions.act_window">
+        <field name="name">Categorías</field>
+        <field name="res_model">zapatos.categoria</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>
