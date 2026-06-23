@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     'name': 'zapatos',
     'version': '1.0',
@@ -15,3 +16,22 @@
     'application': True,
 }
 
+=======
+{
+    'name': 'zapatos',
+    'version': '1.0',
+    'summary': 'Es una zapateria',
+    'description': 'Primer modulo para una zapateria.',
+    'author': 'Alejo',
+    'category': 'Sales',
+    'license': 'LGPL-3',
+    'depends': ['base'],
+    'data': [
+        'security/ir.model.access.csv',
+        'views/zapato_views.xml',
+    ],
+    'installable': True,
+    'application': True,
+}
+
+>>>>>>> dc354161fbd08209893c1d018798333cc58b3849

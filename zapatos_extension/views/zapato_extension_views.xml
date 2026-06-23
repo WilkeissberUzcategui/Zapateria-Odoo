@@ -1,4 +1,5 @@
 <odoo>
+<<<<<<< HEAD
     <record id="view_zapato_form_extension" model="ir.ui.view">
         <field name ="name" > zapatos.zapato.form.extension </field>
         <field name ="model"> zapatos.zapato</field>
@@ -32,5 +33,42 @@
             <field name = "valor_inventario"/>
         </xpath>
     </field>
+=======
+
+    <record id="view_zapato_form_extension" model="ir.ui.view">
+        <field name="name">zapatos.zapato.form.extension</field>
+        <field name="model">zapatos.zapato</field>
+
+        <field name="inherit_id" ref="zapatos.view_zapato_form"/>
+
+        <field name="arch" type="xml">
+            <xpath expr="//group" position="inside">
+                <field name="codigo"/>
+                <field name="marca"/>
+                <field name="color"/>
+                <field name="material"/>
+                <field name="stock_minimo"/>
+                <field name="valor_inventario" readonly="1"/>
+                <field name="descripcion"/>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="view_zapato_list_extension" model="ir.ui.view">
+        <field name="name">zapatos.zapato.list.extension</field>
+        <field name="model">zapatos.zapato</field>
+
+        <field name="inherit_id" ref="zapatos.view_zapato_list"/>
+
+        <field name="arch" type="xml">
+            <xpath expr="//list" position="inside">
+                <field name="codigo"/>
+                <field name="marca"/>
+                <field name="color"/>
+                <field name="valor_inventario"/>
+            </xpath>
+        </field>
+>>>>>>> dc354161fbd08209893c1d018798333cc58b3849
     </record>
 </odoo>

@@ -4,6 +4,11 @@
 !zapatos/**
 !zapatos_extension/
 !zapatos_extension/**
+<<<<<<< HEAD
+=======
+!zapatos_pedido_proveedor/
+!zapatos_pedido_proveedor/**
+>>>>>>> dc354161fbd08209893c1d018798333cc58b3849
 **/_pycache_/
 *.pyc
 *.pyo

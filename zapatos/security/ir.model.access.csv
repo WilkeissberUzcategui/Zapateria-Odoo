@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+=======
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+>>>>>>> dc354161fbd08209893c1d018798333cc58b3849
 access_zapatos_zapato,access.zapatos.zapato,model_zapatos_zapato,,1,1,1,1
